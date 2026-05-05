@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: #eef0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  background: #6c63ff;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.header h2 {
+  margin: 5px 0;
+}
+
+.header p {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Circle */
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+/* TICKS */
+.ticks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ticks div {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: #c7c9f5;
+
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+/* SVG */
+svg {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 8;
+  stroke: #ddd;
+}
+
+#progress {
+  stroke: #6c63ff;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transition: 0.1s linear;
+}
+
+/* Time */
+.time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.status {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: green;
+  font-size: 12px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.start {
+  background: orange;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Laps */
+.laps {
+  margin-top: 20px;
+}
+
+.lap {
+  background: #f3f4ff;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}

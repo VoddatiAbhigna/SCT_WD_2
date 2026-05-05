@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SkillCraft Stopwatch</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <span class="material-icons">watch</span>
+    </div>
+    <h2>SkillCraft</h2>
+    <p>PRECISION STOPWATCH</p>
+  </div>
+
+  <!-- Card -->
+  <div class="card">
+
+    <!-- Circle -->
+    <div class="circle">
+
+      <!-- TICKS -->
+      <div class="ticks"></div>
+
+      <!-- PROGRESS RING -->
+      <svg>
+        <circle cx="100" cy="100" r="90"></circle>
+        <circle cx="100" cy="100" r="90" id="progress"></circle>
+      </svg>
+
+      <!-- TIME -->
+      <div class="time" id="display">00:00:00:00</div>
+      <div class="status" id="status">Ready</div>
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button id="lapBtn">Lap</button>
+      <button id="startBtn" class="start">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- LAPS -->
+    <div class="laps" id="laps"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
